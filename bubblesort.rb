@@ -4,7 +4,7 @@ def bubble_sort(arr)
   n = arr.length
 
   until n <= 1
-  new_n = 0  
+    new_n = 0  
 
     for i in 1..(n - 1)
       if arr[i - 1] > arr[i]
@@ -14,9 +14,8 @@ def bubble_sort(arr)
         new_n = i
       end
     end
-
     n = new_n
-end
+  end
   arr
 end
 
@@ -28,7 +27,7 @@ def bubble_sort_by(arr)
   puts arr
 end
 
-sorter = Proc.new { |arr| 
+sorter = proc { |arr| 
 n = arr.length
 until n <= 1
   new_n = 0
