@@ -21,8 +21,10 @@ def bubble_sort(arr)
     arr
 end
 
+def bubble_sort_by(arr)
 
-arr1 = [5, 3, 2, 34, 12]
-# bubble_sort(arr1)
+    arr.each do |x, y|
+        yield # y <=> x
+    end
 
-print bubble_sort(arr1)
+end
