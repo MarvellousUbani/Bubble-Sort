@@ -1,6 +1,6 @@
+# frozen_string_literal: true
 def bubble_sort(arr)
-
-    n = arr.length
+  n = arr.length
 
     until n <= 1
     new_n = 0  
