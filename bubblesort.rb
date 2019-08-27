@@ -6,12 +6,11 @@ def bubble_sort(arr)
     new_n = 0
 
     arr.each_with_index do |item, index|
-      next unless if item && index > 0 && arr[index - 1] > arr[index]
+      next unless item && index.positive? && arr[index - 1] > arr[index]
         holder = arr[index - 1]
         arr[index - 1] = arr[index]
         arr[index] = holder
         new_n = index
-      end
     end
     n = new_n
   end
@@ -28,12 +27,11 @@ def bubble_sort_by(arr)
 
     arr.each_with_index do |item, index|
       diff = yield arr[index - 1], arr[index]
-        next unless if diff.positive? && item && index.positive? && arr[index - 1].length > arr[index].length
+        next unless diff.positive? && item && index.positive? && arr[index - 1].length > arr[index].length
           holder = arr[index - 1]
           arr[index - 1] = arr[index]
           arr[index] = holder
           new_n = index
-        end
     end
     n = new_n
   end
