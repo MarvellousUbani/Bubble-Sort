@@ -4,6 +4,10 @@ This is the first project of the Main Ruby curriculum at Microverse - @microvers
 
 The goal was to build a method #bubble_sort that takes an array and returns a sorted array.
 
-The project was completed using Ruby. [Assignment link] https://www.theodinproject.com/courses/ruby-programming/lessons/advanced-building-blocks
+The project was completed using Ruby. 
+[Assignment link](https://www.theodinproject.com/courses/ruby-programming/lessons/advanced-building-blocks)
 
-Authors @KerronKing @MarvellousUbani
+Authors
+=======
+[@MarvellousUbani](https://github.com/MarvellousUbani/)
+[@KerronKing](https://github.com/KerronKing/)
